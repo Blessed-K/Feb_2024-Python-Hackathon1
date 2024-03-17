@@ -3,9 +3,14 @@
 
 
 
-# Create a Python program that:
+ #Prompt the user to enter their age
+age = int(input("Enter your age: "))
 
-
-# - Prompts a user to enter their age.
-# - Uses a conditional statement to check if the age is greater than or equal to 18.
-# - Prints "You are eligible to vote" if true, otherwise "You are not eligible to vote."
+# Check if the age is zero
+if age == 0:
+    print("Error: Age cannot be zero.")
+#check if age is greater or equal to 18
+elif age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
